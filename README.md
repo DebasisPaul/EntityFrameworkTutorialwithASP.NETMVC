@@ -57,3 +57,4 @@ Build failed.`
 - Create ShopOnline.Model Class Library.
 - coding The Logic for first workflow.
 - Repository design Pattern Implementation to abstract data handling layout.
+- Create Interface that runs asyncronusly, overturn Generic tasks objects. returns an IEnumerable Collection of type.
