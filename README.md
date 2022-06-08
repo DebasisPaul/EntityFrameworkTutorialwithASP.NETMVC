@@ -51,4 +51,5 @@ Build failed.`
 # Part-2 (Focus on building SCA Using Blazor WebAssembly & Rest ful Web Api)
 - Retrieving Product data from database & Returning data to client blazor component
 - [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
-- 
+- Develop Web API Component
+- Crete Data Transfer Object (DTO)
