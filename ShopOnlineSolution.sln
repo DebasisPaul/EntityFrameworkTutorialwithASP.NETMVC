@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32519.111
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Web", "ShopOnline.Web\ShopOnline.Web.csproj", "{AEF0AD19-E214-4F19-BF07-A9737842052A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Api", "ShopOnline.Api\ShopOnline.Api.csproj", "{AAC9DCF0-0816-4300-862E-4178BDD0DC0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF0AD19-E214-4F19-BF07-A9737842052A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF0AD19-E214-4F19-BF07-A9737842052A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF0AD19-E214-4F19-BF07-A9737842052A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF0AD19-E214-4F19-BF07-A9737842052A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC9DCF0-0816-4300-862E-4178BDD0DC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC9DCF0-0816-4300-862E-4178BDD0DC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC9DCF0-0816-4300-862E-4178BDD0DC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC9DCF0-0816-4300-862E-4178BDD0DC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90028CA6-76EF-4158-901A-49F4A96D1BDF}
+	EndGlobalSection
+EndGlobal
