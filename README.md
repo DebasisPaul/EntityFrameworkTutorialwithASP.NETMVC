@@ -55,3 +55,5 @@ Build failed.`
 - Develop Web API Component
 - Crete Data Transfer Object (DTO)
 - Create ShopOnline.Model Class Library.
+- coding The Logic for first workflow.
+- Repository design Pattern Implementation to abstract data handling layout.
