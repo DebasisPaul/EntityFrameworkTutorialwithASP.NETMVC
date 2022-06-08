@@ -47,6 +47,7 @@ Build failed.`
 -  Generate To Migration Using EF Core
 -  update-database
 -  Check SSMS 19 Prev.
+-  Running Migrations Notes: if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like Migration1 or Migration2 or Migration3 or Migration4 or Migration5. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
 
 # Part-2 (Focus on building SCA Using Blazor WebAssembly & Rest ful Web Api)
 - Retrieving Product data from database & Returning data to client blazor component
