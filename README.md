@@ -48,12 +48,12 @@ Build failed.`
 -  Check SSMS 19 Prev.
 -  Running Migrations Notes: if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like Migration1 or Migration2 or Migration3 or Migration4 or Migration5. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
 
-### Part-2 (Focus on building SOS Using Blazor WebAssembly & Rest ful Web Api)
+### Part-2 (Dediacted To building a SOS Using Blazor & Rest ful Web Api)
 ---
 - Retrieving Product data from database & Returning data to client blazor component
 - [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
 - Develop Web API Component
-- Crete Data Transfer Object (DTO)
+- Create Data Transfer Object (DTO)
 - Create ShopOnline.Model Class Library.
 - coding The Logic for first workflow.
 - Repository design Pattern Implementation to abstract data handling layout.
