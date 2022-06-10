@@ -10,7 +10,7 @@
 `Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named Web Assembly. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create tis code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.`
 
-### Technologies
+### SOS Technologies
 ---
 1. Visual Studio Enterprise 2022 Prev.
 2. .Net 7 Prev.
@@ -21,16 +21,6 @@ We can create tis code using C#. In this appliaction however the payment gateway
 7. POSTMAN
 8. Entitity Framework Core Code First Migration
 9. Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
-
-### QA
----
-- Problem: Add-Migration InitialCreate Not Working `Could not load assembly 'ShopOnline.Web'. Ensure it is referenced by the startup project 'ShopOnline.Api'.`
-- Solution: `https://www.thecodebuzz.com/build-failed-efcore-scaffold-dbcontext-command-pmc/`
-
-- Problem: `Add-Migration InitialCreate
-Build started...
-Build failed.`
-- Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
 
 ### Part-1 (Initial SetUp)
 ---
@@ -61,3 +51,15 @@ Build failed.`
 - coding The Logic for first workflow.
 - Repository design Pattern Implementation to abstract data handling layout.
 - Create Interface that runs asyncronusly, overturn Generic tasks objects. returns an IEnumerable Collection of type.
+
+
+
+### QA
+---
+- Problem: Add-Migration InitialCreate Not Working `Could not load assembly 'ShopOnline.Web'. Ensure it is referenced by the startup project 'ShopOnline.Api'.`
+- Solution: `https://www.thecodebuzz.com/build-failed-efcore-scaffold-dbcontext-command-pmc/`
+
+- Problem: `Add-Migration InitialCreate
+Build started...
+Build failed.`
+- Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
