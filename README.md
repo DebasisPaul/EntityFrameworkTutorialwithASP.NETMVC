@@ -20,7 +20,6 @@ We can create tis code using C#. In this appliaction however the payment gateway
 6. REST ful MVC Web API
 7. POSTMAN
 8. Build database Using Entitity Framework Core Code First Migration
-9. Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
 
 ### Part-1 (Initial SetUp)
 ---
@@ -30,8 +29,9 @@ We can create tis code using C#. In this appliaction however the payment gateway
 -  Create Blazor Web Assembly Solution
 -  Create Rest ful Web Api Project
 -  Create Entities Related C# Clases
--  Create Connection String
+-  Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
 -  Insall Nuget Packages
+-  Configuring Connection String
 -  Create Database Context
 -  OnModelCreating Method Overriding
 -  Using Entity Framework Core DbSet Generic Type 
