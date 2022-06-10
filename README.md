@@ -19,7 +19,7 @@ We can create tis code using C#. In this appliaction however the payment gateway
 5. Bootstrap v5
 6. REST ful MVC Web API
 7. POSTMAN
-8. Entitity Framework Core Code First Migration
+8. Build database Using Entitity Framework Core Code First Migration
 9. Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
 
 ### Part-1 (Initial SetUp)
@@ -27,9 +27,9 @@ We can create tis code using C#. In this appliaction however the payment gateway
 -  Introduction
 -  Tools
 -  What is Blazor Web Assembly?
--  Create Blazor Project
--  Create Web Api Project
--  Create Entities
+-  Create Blazor Web Assembly Solution
+-  Create Rest ful Web Api Project
+-  Create Entities Related C# Clases
 -  Create Connection String
 -  Insall Nuget Packages
 -  Create Database Context
@@ -63,6 +63,12 @@ Build started...
 Build failed.`
 - Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
 
+- [Q]  Why We Use Migrations?
+- [A]  Migration Allow us to evolve our database without loosing data or database object.
+
 ### TIPS
 ---
 - Running Migrations Notes: if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like Migration1 or Migration2 or Migration3 or Migration4 or Migration5. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
+
+### RESEARCH 
+- [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
