@@ -1,17 +1,20 @@
 ### SOS
 ---
-- `Shopping Cart Application With Blazor Web Assembly with Payment gateway.`
+- `Shopping Cart Application With Blazor Web Assembly & Web Api with Payment gateway powered by PayPal `
 
 
 ### Course In Details
 ---
 #### Blazor Web Assembly is a Single page app framework for building interective client side web app with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 Prev. You will Leatn step by step how to build shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account. Debasis Paul Teaches this course. Debasis is a Software Developer Architect with over the years of experience.
 
+### Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named Web Assembly. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
+We can create tis code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.
+
 ### Technologies
 ---
-1. Visual Studio Enterprise 2022 Prev
-2. .Net 7 Prev
-3. Sql Server 2022
+1. Visual Studio Enterprise 2022 Prev.
+2. .Net 7 Prev.
+3. Sql Server 2022 CTP
 4. Blazor WebAssembly
 5. Bootstrap v5
 6. REST ful MVC Web API
