@@ -5,7 +5,7 @@
 
 ### Course In Details
 ---
-#### Blazor Web Assembly is a Single page app framework for building interective client side web app with dot net. It used open standard without plugin or recompiling code into other languages. This Course will teach you how to balzor web assembly & web api on .Net 7 Prev. You will teach step by step how to build shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account. Debasis Paul Teaches this course. Debasis is Software Developer Architect with over the years of experience.
+#### Blazor Web Assembly is a Single page app framework for building interective client side web app with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 Prev. You will Leatn step by step how to build shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account. Debasis Paul Teaches this course. Debasis is a Software Developer Architect with over the years of experience.
 
 ### Technologies
 ---
