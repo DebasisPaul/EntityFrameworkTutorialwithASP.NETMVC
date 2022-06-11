@@ -18,7 +18,7 @@ Shop Online Web
 6. [ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/) for handling database related funtionality & returning relavent data from the server to our client side blazor application.
 7. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
 8. [POSTMAN](https://www.postman.com/)
-9. [Build database Using Entitity Framework Core 6 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
+9. [Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
 
 `Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named Web Assembly. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create this code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.`
@@ -74,3 +74,8 @@ Build failed.`
 - [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
 - [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 - [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
+- [WebAssembly 1.0 ](https://webassembly.org/)
+- [C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor)
+- [Blazor University](https://blazor-university.com/)
+- [https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
