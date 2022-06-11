@@ -12,7 +12,7 @@
 1. [Visual Studio 2022 (Enterprise Prev)](https://visualstudio.microsoft.com/vs/preview/)
 2. [.Net 7 Prev 5](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/)
 3. [SQL Server 2022 (16.x) Preview community technology preview (CTP) 2.0.](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16)
-4. [Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0)
+4. [Blazor WebAssembly V2](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0)
 5. [Bootstrap v5](https://getbootstrap.com/) for layout & styling purposes.
 6. [RESTful MVC Web API](https://docs.microsoft.com/en-us/aspnet/web-api/) for handling database related funtionality & returning relavent data from the server to our client side blazor application.
 7. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
