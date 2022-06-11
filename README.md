@@ -40,7 +40,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 -  update-database
 -  Check SSMS 19 Prev.
 
-### Part-2 (Dediacted To building a SOS Using Blazor & Rest ful Web Api)
+### SOS Part-2
 ---
 - Retrieving Product data from database & Returning data to client blazor component
 - [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
