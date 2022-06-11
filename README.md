@@ -31,7 +31,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 -  Create Entities Related C# Clases. This is way the classes that represent out database entities will resign.
 -  Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
 -  Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database the ef7 create for us.
--  Insall Nuget Packages
+-  Insall Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio.
 -  Configuring Connection String
 -  Create Database Context
 -  OnModelCreating Method Overriding
