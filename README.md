@@ -2,8 +2,9 @@
 ---
 Shop Online Web
 - `(Very Basic ) Shopping Cart Application/Shop Online Solution With Blazor Web Assembly & Web Api integrated with Payment gateway powered by PayPal `
-
-
+<img src="https://th.bing.com/th/id/R.291544c41c4e3a6a542f3f121001f63e?rik=nAC9%2bKfzsXG8GA&pid=ImgRaw&r=0" style="width:400px;height:200px;">
+<img src="https://www.rlogical.com/wp-content/uploads/2020/10/Blazor.png" style="width:400px;height:200px;">
+<img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:400px;height:200px;">
 ### START
 ---
 `Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . You will Learn step by step how to build a shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account.`
@@ -14,11 +15,11 @@ Shop Online Web
 2. [.Net 7 Prev 5](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/)
 3. [SQL Server 2022 (16.x) Preview community technology preview (CTP) 2.0.](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16)
 4. [Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0)
-5. [Bootstrap v5.2](https://getbootstrap.com/) for layout & styling purposes.
-6. [ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/) for handling database related funtionality & returning relavent data from the server to our client side blazor application.
-7. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
-8. [POSTMAN](https://www.postman.com/) To test web api funtionality.
-9. [Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
+6. [Bootstrap v5.2](https://getbootstrap.com/) for layout & styling purposes.
+8. [ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/) for handling database related funtionality & returning relavent data from the server to our client side blazor application.
+9. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
+10. [POSTMAN](https://www.postman.com/) To test web api funtionality.
+11. [Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
 
 `Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named Web Assembly. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create this code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.`
