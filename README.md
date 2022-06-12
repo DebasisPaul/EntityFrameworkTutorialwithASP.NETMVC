@@ -25,21 +25,20 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 ### SOS Part-1 (Build Started)
 ---
-
 -  Create Blazor Web Assembly Solution
 -  Create Rest ful Web Api Project
 -  Create Entities Related C# Clases. This is way the classes that represent out database entities will resign.
 -  Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
 -  Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database the ef7 create for us.
 -  Insall Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio.
--  Configuring Connection String
--  Create Database Context
+-  Configuring Connection String in order to connect the application with the database that to create using ef7 code first migrations.
+-  Create Database Context Class.
 -  OnModelCreating Method Overriding
 -  Using Entity Framework Core DbSet Generic Type 
 -  Register ShopOnlineDbContext class for Dependency Injection
 -  Generate To Migration Using EF Core
--  update-database
--  Check SSMS 19 Prev.
+-  To run migration type update-database Command in PM console Window.
+-  Check SSMS 19 Prev 2.
 
 ### SOS Part-2
 ---
@@ -69,9 +68,15 @@ Build failed.`
 
 ### TIPS
 ---
-- Running Migrations Notes: if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like Migration1 or Migration2 or Migration3 or Migration4 or Migration5. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
-- Enable Open API Support: by doing this the `Swashbuckle.AspNetCore` nuget package will be automatically installed And the appropriate Swaggwer middleware will be automatically configured appropriately with in our project. One of the advantage of this is when wen we run our web api project interectevly we eill be able to test our web api code through our browsers even before we've developed any front-end code. so a basic UI will automatically be created for this purpose for us. When we run Our application interectevly we be able to test each of action method through the relavent automatically cerated web based UI.  
+- `Running Migrations Notes:` if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like `Migration1 or Migration2 or Migration3 or Migration4 or Migration5`. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
+
+- `Enable Open API Support:` by doing this the `Swashbuckle.AspNetCore` nuget package will be automatically installed And the appropriate Swaggwer middleware will be automatically configured appropriately with in our project. One of the advantage of this is when wen we run our web api project interectevly we eill be able to test our web api code through our browsers even before we've developed any front-end code. so a basic UI will automatically be created for this purpose for us. When we run Our application interectevly we be able to test each of action method through the relavent automatically cerated web based UI. 
+ 
 - We are going to build our database using code first migrations & entity framework core. migration allow us to evolve our database without using data or database object. So by using plain all C# classes we can build the database entites that we wish to include within our Shopping Cart Application. Once we've created relavent entity related C# classes we're look at an entity related diagram that represent our shooping cart application database design. 
+
+- `Generating Migration Using ef7` Open NuGet Package Manager Console Window. Follow with this Command `Add-Migration InitiaCreate` ShopOnline Api project Set as Startup Project. By generating this migration class this code generate our database & the relavent table. This method also contain code that seeds the relavent database table with the data that prepared prair to careate in this project.
+
+- `Down` Method contains code to undo the changes made by code contain with the method.
 
 ### RESEARCH 
 - [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
