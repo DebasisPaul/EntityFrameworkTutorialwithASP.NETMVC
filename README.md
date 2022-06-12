@@ -58,6 +58,8 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 - Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the tast object as discussed this is so the method implement this method defination can runs asycronusly.
 
+- Now we've define the interface that we want to class name ProductRepository to implement. So lets create a class directly with in the repository directory named product repository & the first things we need to do is write the code to implement the `IProductRepository` Interface. 
+
 
 ### QA
 ---
