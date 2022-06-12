@@ -62,8 +62,8 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 - Visual Studio generates the relavent code stuffs for us. So Visual Studio generates default implementations for the rlavent method definations. So in this stage only want to ipmplement the code logic relavent to the web flow that is the focus of this Project. IE returning a collection of product data to the client side calling code in this case our Blazor component. We are going to new to use the ShopOnlineDnContext Object to interect with our ShopOnline Database. As u will recall earlier we registered the ShopOnlineDbContext object for dependency injection. This means that we're able to gain accessed to an object of type ShopOnlineDbContext by defining an appropriate parameterized constructor in our pruduct repository class.
 
-- 
-
+- An Easy way to automaically generate a Constructor within visual studio is type `ctor` & then press the tab key twice. Then in order to indicate to .Net that we want an object of type ShopOnlineDbContext to be injected into this constructor only need to do is difine an parameter with in our constructor of type ShopOnlineDbContext.
+  
 
 ### QA
 ---
@@ -102,3 +102,8 @@ Build failed.`
 - [https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
 - [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
 - [Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
+- [The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
+- [Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
+- [Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+- [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
+- [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
