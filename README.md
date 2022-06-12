@@ -1,24 +1,25 @@
-### SOS
+### 🧰 SOS
 ---
 Shop Online Web
 - `(Very Basic ) Shopping Cart Application/Shop Online Solution With Blazor Web Assembly & Web Api, Integrated with Payment gateway & powered by PayPal `
 <img src="https://th.bing.com/th/id/R.291544c41c4e3a6a542f3f121001f63e?rik=nAC9%2bKfzsXG8GA&pid=ImgRaw&r=0" style="width:1200px;height:500px;">
 
-### START
+### 🙌 START
 ---
 `Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . You will Learn step by step how to build a shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account.`
 
 ### SOS Technologies
----
-1. <img src="https://th.bing.com/th/id/OIP.V-EXykC2eWn7fHqPslAl2wHaHX?pid=ImgDet&rs=1" style="width:50px;height:50px;">[Visual Studio 2022 version 17.2.3 (Enterprise Preview)](https://visualstudio.microsoft.com/vs/preview/) `https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes` 
-2.  <img src="https://th.bing.com/th/id/R.3d6504d22dce42b5f9c6cdd19c4f5c0b?rik=l4CnmJIt2wpQlw&pid=ImgRaw&r=0" style="width:50px;height:50px;">[.Net 7 Prev 5](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/)
-3. [SQL Server 2022 (16.x) Preview community technology preview (CTP) 2.0.](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16)
-4. <img src="https://www.rlogical.com/wp-content/uploads/2020/10/Blazor.png" style="width:50px;height:50px;">[Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0) 
-6. [Bootstrap v5.2](https://getbootstrap.com/) for layout & styling purposes.
-8. <img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:50px;height:50px;">[ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/)  for handling database related funtionality & returning relavent data from the server to our client side blazor application.
-9. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
-10. [POSTMAN](https://www.postman.com/) To test web api funtionality.
-11. <img src="https://th.bing.com/th/id/R.01e6f07f9add7f088c61cc86f3b8c9b2?rik=tleE7%2fpICszi%2fw&pid=ImgRaw&r=0" style="width:50px;height:50px;">[Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
+| Logo | Technologies | 
+| ----------- | ----------- |
+|<img src="https://th.bing.com/th/id/OIP.V-EXykC2eWn7fHqPslAl2wHaHX?pid=ImgDet&rs=1" style="width:50px;height:50px;">|[Visual Studio 2022 version 17.2.3 (Enterprise Preview)](https://visualstudio.microsoft.com/vs/preview/) `https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes`|
+|<img src="https://th.bing.com/th/id/R.3d6504d22dce42b5f9c6cdd19c4f5c0b?rik=l4CnmJIt2wpQlw&pid=ImgRaw&r=0" style="width:50px;height:50px;">|[.Net 7 Prev 5](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/)|
+||[SQL Server 2022 (16.x) Preview community technology preview (CTP) 2.0.](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16)||
+|<img src="https://www.rlogical.com/wp-content/uploads/2020/10/Blazor.png" style="width:50px;height:50px;">|[Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0) |
+||[Bootstrap v5.2](https://getbootstrap.com/) for layout & styling purposes.|
+| <img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:50px;height:50px;">|[ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/)  for handling database related funtionality & returning relavent data from the server to our client side blazor application.|
+||[PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.|
+|| [POSTMAN](https://www.postman.com/) To test web api funtionality.|
+|<img src="https://th.bing.com/th/id/R.01e6f07f9add7f088c61cc86f3b8c9b2?rik=tleE7%2fpICszi%2fw&pid=ImgRaw&r=0" style="width:50px;height:50px;">|[Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)|
 
 `Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named Web Assembly. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create this code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.`
@@ -76,9 +77,9 @@ Build failed.`
 - Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
 
 - [Q]  Why We Use Migrations?
-- [A]  Migration Allow us to evolve our database without loosing data or database object.
+- [A]  ```Migration Allow us to evolve our database without loosing data or database object.```
 
-### TIPS
+###  📦 TIPS
 ---
 - `Running Migrations Notes:` if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like `Migration1 or Migration2 or Migration3 or Migration4 or Migration5`. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
 
@@ -91,7 +92,7 @@ Build failed.`
 - `Down` Method contains code to undo the changes made by code contain with the method.
 
 
-### RESEARCH 
+### 🏆  RESEARCH 
 - [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
 - [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 - [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
@@ -107,7 +108,26 @@ Build failed.`
 - [Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
 - [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
 - [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+- [Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+- [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)
 
-# Business Enquiry
----
-- Email `debasispaul@outlook.in` `debasispaul@outlook.com`
+# 👀 Business Enquiry
+
+```Email 
+debasispaul@outlook.in 
+debasispaul@outlook.com
+```
+## 🚀 Contribution
+
+Do you want to contribute? Check out our [.NET Community Toolkit Wiki](https://aka.ms/wct/wiki) page to learn more about contribution and guidelines.
+
+## 🌍 Roadmap
+
+Read what we [plan for next iterations](https://github.com/CommunityToolkit/dotnet/milestones), and feel free to ask questions.
+
+Check out our [Preview Packages Wiki Page](https://github.com/CommunityToolkit/dotnet/wiki/Preview-Packages) to learn more about updating your NuGet sources in Visual Studio, then you can also get pre-release packages of upcoming versions to try.
+
+## 📄 Code of Conduct
+
+This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community.
+For more information see the [.NET Foundation Code of Conduct](CODE_OF_CONDUCT.md).
