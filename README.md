@@ -1,7 +1,7 @@
 ### SOS
 ---
 Shop Online Web
-- `(Very Basic ) Shopping Cart Application/Shop Online Solution With Blazor Web Assembly & Web Api integrated with Payment gateway powered by PayPal `
+- `(Very Basic ) Shopping Cart Application/Shop Online Solution With Blazor Web Assembly & Web Api, Integrated with Payment gateway & powered by PayPal `
 <img src="https://th.bing.com/th/id/R.291544c41c4e3a6a542f3f121001f63e?rik=nAC9%2bKfzsXG8GA&pid=ImgRaw&r=0" style="width:1200px;height:500px;">
 
 ### START
