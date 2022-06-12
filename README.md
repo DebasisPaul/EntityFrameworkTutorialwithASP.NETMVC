@@ -2,9 +2,8 @@
 ---
 Shop Online Web
 - `(Very Basic ) Shopping Cart Application/Shop Online Solution With Blazor Web Assembly & Web Api integrated with Payment gateway powered by PayPal `
-<img src="https://th.bing.com/th/id/R.291544c41c4e3a6a542f3f121001f63e?rik=nAC9%2bKfzsXG8GA&pid=ImgRaw&r=0" style="width:400px;height:200px;">
-<img src="https://www.rlogical.com/wp-content/uploads/2020/10/Blazor.png" style="width:400px;height:200px;">
-<img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:400px;height:200px;">
+<img src="https://th.bing.com/th/id/R.291544c41c4e3a6a542f3f121001f63e?rik=nAC9%2bKfzsXG8GA&pid=ImgRaw&r=0" style="width:1200px;height:500px;">
+
 ### START
 ---
 `Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . You will Learn step by step how to build a shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account.`
@@ -14,9 +13,9 @@ Shop Online Web
 1. [Visual Studio 2022 version 17.2.3 (Enterprise Preview)](https://visualstudio.microsoft.com/vs/preview/) `https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes`
 2. [.Net 7 Prev 5](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/)
 3. [SQL Server 2022 (16.x) Preview community technology preview (CTP) 2.0.](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16)
-4. [Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0)
+4. [Blazor WebAssembly](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0) <img src="https://www.rlogical.com/wp-content/uploads/2020/10/Blazor.png" style="width:200px;height:200px;">
 6. [Bootstrap v5.2](https://getbootstrap.com/) for layout & styling purposes.
-8. [ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/) for handling database related funtionality & returning relavent data from the server to our client side blazor application.
+8. [ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/) <img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:200px;height:200px;"> for handling database related funtionality & returning relavent data from the server to our client side blazor application.
 9. [PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.
 10. [POSTMAN](https://www.postman.com/) To test web api funtionality.
 11. [Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)
