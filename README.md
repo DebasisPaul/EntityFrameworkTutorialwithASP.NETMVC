@@ -119,15 +119,19 @@ debasispaul@outlook.com
 ```
 ## 🚀 Contribution
 
-Do you want to contribute? Check out our [.NET Community Toolkit Wiki](https://aka.ms/wct/wiki) page to learn more about contribution and guidelines.
+Do you want to contribute? Check out our []() page to learn more about contribution and guidelines.
 
 ## 🌍 Roadmap
 
-Read what we [plan for next iterations](https://github.com/CommunityToolkit/dotnet/milestones), and feel free to ask questions.
+Read what we [plan for next iterations](), and feel free to ask questions.
 
-Check out our [Preview Packages Wiki Page](https://github.com/CommunityToolkit/dotnet/wiki/Preview-Packages) to learn more about updating your NuGet sources in Visual Studio, then you can also get pre-release packages of upcoming versions to try.
+Check out our [Wiki Page]) to learn more about updating your NuGet sources in Visual Studio, then you can also get pre-release packages of upcoming versions to try.
 
 ## 📄 Code of Conduct
 
 This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community.
-For more information see the [.NET Foundation Code of Conduct](CODE_OF_CONDUCT.md).
+For more information see the []().
+
+## 🏆 Contributors
+
+Made with [DebasisPaul](https://sites.google.com/view/debasispaul).
