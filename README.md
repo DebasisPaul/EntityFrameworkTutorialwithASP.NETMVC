@@ -42,14 +42,21 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 ### SOS Part-2
 ---
-- Retrieving Product data from database & Returning data to client blazor component
+- `Retrieving Product data from database & Returning data to client blazor component`
+
 - [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
-- Develop Web API Component
-- Create Data Transfer Object (DTO) Model, this type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.
-- Create ShopOnline.Model Class Library.
-- Coding The Logic for first workflow.
-- Repository design Pattern Implementation to abstract data handling layout.
-- Create Interface that runs asyncronusly, overturn Generic tasks objects. returns an IEnumerable Collection of type.
+
+- `Develop Web API Component`
+
+- `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.
+
+- `Create ShopOnline.Model Class Library` for creating the classes that have representingour dtos.
+
+- `Coding The Logic for first workflow` Starting with the web api component. This workflow simply involved retrieving product data from our database & returning the data to the client blazor application. The blazor application will contain code that displays the relavent product data to the user. So ShopOnlineDbContext class has been registered for dependency injection. We'll see in a bit how we are able to implement code to ensure that an object of type ShopOnlineDbContext is injected into relavent classes.
+
+- `Repository design Pattern Implementation to abstract data handling layout` Repositories are classes or components that incapsulate the logic required to access data Sources. We can use repositories to centralized common data access funtinality. Which has the benefit of facilitating beta maintainbility easier Unit Testing, extensibility & Cleaner Code. The best way to Understand the repository pattern is to Implement the relavent code. So lets write the code for Product repository Funtionality.
+
+- Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the tast object as discussed this is so the method implement this method defination can runs asycronusly.
 
 
 ### QA
@@ -77,6 +84,7 @@ Build failed.`
 
 - `Down` Method contains code to undo the changes made by code contain with the method.
 
+
 ### RESEARCH 
 - [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
 - [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
@@ -86,3 +94,4 @@ Build failed.`
 - [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor)
 - [Blazor University](https://blazor-university.com/)
 - [https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
+- [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
