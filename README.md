@@ -125,7 +125,7 @@ Do you want to contribute? Check out our []() page to learn more about contribut
 
 Read what we [plan for next iterations](), and feel free to ask questions.
 
-Check out our [Wiki Page]) to learn more about updating your NuGet sources in Visual Studio, then you can also get pre-release packages of upcoming versions to try.
+Check out our [Wiki Page](https://github.com/CommunityToolkit/WindowsCommunityToolkit/wiki) to learn more about updating your NuGet sources in Visual Studio, then you can also get pre-release packages of upcoming versions to try.
 
 ## 📄 Code of Conduct
 
