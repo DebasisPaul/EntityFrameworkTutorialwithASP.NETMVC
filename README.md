@@ -45,7 +45,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 - Retrieving Product data from database & Returning data to client blazor component
 - [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
 - Develop Web API Component
-- Create Data Transfer Object (DTO)
+- Create Data Transfer Object (DTO) Model, this type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline database classes. but may be differntly shaped based on the data we needs to be passed between client & server.Now we create a standard library project to house of `dtos`.
 - Create ShopOnline.Model Class Library.
 - coding The Logic for first workflow.
 - Repository design Pattern Implementation to abstract data handling layout.
