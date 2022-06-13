@@ -46,12 +46,18 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 -  Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations.
 
--  Create Database Context Class.
+-  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our ShopOnlineDbContext Class inherit fromef7 DbContext class.
+
 -  OnModelCreating Method Overriding
+
 -  Using Entity Framework Core DbSet Generic Type 
+
 -  Register ShopOnlineDbContext class for Dependency Injection
+
 -  Generate To Migration Using EF Core
+
 -  To run migration type update-database Command in PM console Window.
+
 -  Check SSMS 19 Prev 2.
 
 ### SOS Part-2
@@ -136,6 +142,10 @@ Build failed.`
 - [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/)
 - [.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
 - [Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
+- [DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
+- [using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
+- [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
+- [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
 
 # 👀 Business Enquiry
 
