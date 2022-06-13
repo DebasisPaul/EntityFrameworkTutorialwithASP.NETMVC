@@ -46,7 +46,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 -  Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations.
 
--  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our ShopOnlineDbContext Class inherits from ef7 DbContext class. An red sqigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our DbContext Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is the generic type `DbContextOptions` which has the data type ShopOnlineDbContext Passed as an argument to it. We can then write code to pass the argument that will be passed to our ShopOnlineDbContext Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with product related data
+-  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our `ShopOnlineDbContext` Class inherits from ef7 DbContext class. An red sqigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our `ShopOnlineDbContext` Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is of the generic type `DbContextOptions` which has the data type `ShopOnlineDbContext` Passed as an argument to it. We can then write code to pass the argument that will be passed to our `ShopOnlineDbContext` Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with the relavent data so that we can move directly to the creation of our shopping cart functionality. So in order to seed database appropriately wen can override a method that exist  within a
 
 
 -  OnModelCreating Method Overriding
@@ -113,44 +113,46 @@ Build failed.`
 
 
 ### 🏆  RESEARCH & STUDY
-- [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
-- [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
-- [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
-- [WebAssembly 1.0 ](https://webassembly.org/)
-- [C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor)
-- [Blazor University](https://blazor-university.com/)
-- [https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
+- 1[Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
+- 2[Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
+- 3[ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
+- 4[WebAssembly 1.0 ](https://webassembly.org/)
+- 5[C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- 6[awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor)
+- 7[Blazor University](https://blazor-university.com/)
+- 8[https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
 - [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
-- [Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
-- [The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
-- [Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
-- [Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
-- [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
-- [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
-- [Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
-- [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)
-- [Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
-- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-- [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
-- [Open Api](https://www.openapis.org/)
-- [ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
-- [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)
-- [Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
-- [Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
-- [Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
-- [Properties (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
-- [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/)
-- [.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
-- [Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
-- [DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
-- [using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
-- [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
-- [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
-- [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
-- [C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
-- [C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
-- [C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
+- 9[Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
+- 10[The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
+- 11[Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
+- 12[Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+- 13[Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
+- 14[Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+- 15[Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+- 16[Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)
+- 17[Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+- 18[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- 19[SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
+- 20[Open Api](https://www.openapis.org/)
+- 21[ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
+- 22[WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)
+- 23[Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
+- 24[Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
+- 25[Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
+- 26[Properties (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
+- 27[ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/)
+- 28[.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
+- 29[Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
+- 30[DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
+- 31[using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
+- 32[Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
+- 33[Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
+- 34[Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
+- 35[C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+- 36[C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
+- 37[C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
+- 38[Creating and configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)
+- 39[Data Seeding](https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding)
 
 # 👀 Business Enquiry
 
