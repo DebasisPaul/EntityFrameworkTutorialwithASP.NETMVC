@@ -8,10 +8,14 @@
 
 ### 🙌 START
 ---
-*Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . You will Learn step by step how to build a shopping Cart Application. This Course also provide the guide on how to intigrate a payment gateway into your blazor web Assembly component so that a user able to pay for products through your application using a debit or credit card or in the paypal account.*
+*Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . We will build step by step a shopping Cart Application. We also provide the guide on how to intigrate a payment gateway into our blazor web Assembly component so that a user able to pay for products through our application using a debit or credit card or in the paypal account.*
 
 *Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named `Web Assembly`. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create this code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code.*
+
+*We Enable `OpenAPI` support. By doing this the `Swashbuckle` NuGet Package will be automatically installed & the appropriate swagger middleware will be automatically configured appropiately within our project.One of the advatages of this is when we run our Web Api project interectively we'll be test our web Api code through our browsers even before we've developed any front-end code. So the basic UI will automatically be created for this purpose for us. When we run our application interectevly we'll be able  to test each of our action methods through the relavent automatically created web based UI.*
+
+*We're going to build our database using code first migration & ef7. Migration allow us to evolve our database without using data or database object. So by using plain all database classes we can build the database entities that we wish to include within our shopping cart application. Once we've created relavent entity related C# classes we're look at an entity relationship diagram that represant our shopping cart applications databse design.*
 
 
 ### SOS Technologies
@@ -25,7 +29,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 | <img src="https://th.bing.com/th/id/OIP.v3itvY2BcYOwgZJNGfRFJwHaHa?pid=ImgDet&rs=1" style="width:50px;height:50px;">|[ASP.NET 4.x RESTful MVC Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/)  for handling database related funtionality & returning relavent data from the server to our client side blazor application.|
 ||[PayPal Payment Gateway](https://developer.paypal.com/api/nvp-soap/payflow/payflow-gateway/) so that a user can use their paypal acoount or a valid debit or credit card to pay for the items that all purchased through our online shopping cart application.|
 || [POSTMAN](https://www.postman.com/) To test web api funtionality.|
-|<img src="https://th.bing.com/th/id/R.01e6f07f9add7f088c61cc86f3b8c9b2?rik=tleE7%2fpICszi%2fw&pid=ImgRaw&r=0" style="width:50px;height:50px;">|[Build database Using Entity Framework 7 Preview 4 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)|
+|<img src="https://th.bing.com/th/id/R.01e6f07f9add7f088c61cc86f3b8c9b2?rik=tleE7%2fpICszi%2fw&pid=ImgRaw&r=0" style="width:50px;height:50px;">|[Build database Using ef7 Pre5 Code First Migration](https://docs.microsoft.com/en-us/aspnet/entity-framework)|
 
 
 ### SOS Part-1 (Build Started)
@@ -114,6 +118,13 @@ Build failed.`
 - [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 - [Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 - [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)
+- [Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
+- [Open Api](https://www.openapis.org/)
+- [ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
+- [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)
+- [Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
 # 👀 Business Enquiry
 
