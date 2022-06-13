@@ -100,7 +100,7 @@ Build failed.`
 - `Down` Method contains code to undo the changes made by code contain with the method.
 
 
-### 🏆  RESEARCH 
+### 🏆  RESEARCH & STUDY
 - [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
 - [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 - [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
@@ -125,6 +125,8 @@ Build failed.`
 - [ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
 - [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)
 - [Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
+- [Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
+- [Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
 
 # 👀 Business Enquiry
 
