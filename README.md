@@ -37,10 +37,15 @@ We can create this code using C#. In this appliaction however the payment gatewa
 -  Create Blazor Web Assembly Solution
 -  Create Rest ful Web Api Project
 -  Create Entities Related C# Clases. This is way the classes that represent out database entities will resign.
+
 -  Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)
--  Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database the ef7 create for us.
--  Insall Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio.
--  Configuring Connection String in order to connect the application with the database that to create using ef7 code first migrations.
+
+-  Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database that ef7 create for us.
+
+-  In order to generate our database with the relavent tables through Visual Studio Let's Install Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio. The reason for installing `EntityFrameworkCore.Tools` this package is because we want to run our migration with in the visual studio as supposed to using .Net CLI for this purpose. We can use different commands when running migration commands using the .Net CLI. As supposed to the command we run when using Visual Studio.
+
+-  Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations.
+
 -  Create Database Context Class.
 -  OnModelCreating Method Overriding
 -  Using Entity Framework Core DbSet Generic Type 
@@ -127,6 +132,10 @@ Build failed.`
 - [Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 - [Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
 - [Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
+- [Properties (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
+- [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/)
+- [.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
+- [Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
 
 # 👀 Business Enquiry
 
