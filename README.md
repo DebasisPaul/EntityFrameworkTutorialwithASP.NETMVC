@@ -46,7 +46,8 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 -  Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations.
 
--  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our ShopOnlineDbContext Class inherit fromef7 DbContext class.
+-  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our ShopOnlineDbContext Class inherits from ef7 DbContext class. An red sqigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our DbContext Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is the generic type `DbContextOptions` which has the data type ShopOnlineDbContext Passed as an argument to it. We can then write code to pass the argument that will be passed to our ShopOnlineDbContext Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with product related data
+
 
 -  OnModelCreating Method Overriding
 
@@ -146,6 +147,10 @@ Build failed.`
 - [using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
 - [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
 - [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
+- [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
+- [C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+- [C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
+- [C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
 
 # 👀 Business Enquiry
 
