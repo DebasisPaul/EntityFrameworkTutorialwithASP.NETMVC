@@ -1,7 +1,7 @@
 
 🙌 👍
 
-*part-1*
+*00-26.05part-1*
 
 *00:00 - 00:50 Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . We will build step by step a shopping Cart Application. We also provide the guide on how to intigrate a payment gateway into our blazor web Assembly component so that a user able to pay for products through our application using a debit or credit card or in the paypal account.  [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA) *
 
@@ -39,7 +39,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 * 24.56 `Running Migrations Notes:` if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` The number Zero is a special case that means before the first migration & causes the effects of all migration to be rolled back. To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like `Migration1 or Migration2 or Migration3 or Migration4 or Migration5`. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`*
 
-*part-2*
+*26.07 part-2*
 
 *`Retrieving Product data from database & Returning data to client blazor component`*
 
