@@ -1,8 +1,9 @@
----
-### 🙌 START
----
 
-*Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . We will build step by step a shopping Cart Application. We also provide the guide on how to intigrate a payment gateway into our blazor web Assembly component so that a user able to pay for products through our application using a debit or credit card or in the paypal account.00:00 - 00:50*
+🙌 👍
+
+*part-1*
+
+*00:00 - 00:50 Blazor Web Assembly is a Single page app framework for building interective client side web apps with dot net. It uses open Web standard without plugin or recompiling code into other languages. This Course will teach you how to use balzor web assembly & web api on .Net 7 . We will build step by step a shopping Cart Application. We also provide the guide on how to intigrate a payment gateway into our blazor web Assembly component so that a user able to pay for products through our application using a debit or credit card or in the paypal account.  [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA) *
 
 *Blazor is a relatively new feature of asp dot net. It offers two hosting model. A server side hosting model &  a client side hosting model. We are going to use the client side hosting model for the development of our shopping cart application. The significanse of this hosting model is that the C# code runs directly within our browsers. What makes this possible is a technology named `Web Assembly`. In recent years the creation of SPA applications or single page applications have become very popular as web solutions. Recently Javascript frameworks like Angular or React have been the avilable choices for the creation of spa applications. With Blazor we are now able to create our single page applications using C#. We don't necessaryly need to depend on  javascript for the creation of our interective UI Code.
 We can create this code using C#. In this appliaction however the payment gateway provided by paypal is coded in javascript. So we will use blazor into our probality funtionality with javascript to interect with the relavent javascript paypal code. 02:08 - 03:20*
@@ -24,20 +25,21 @@ We can create this code using C#. In this appliaction however the payment gatewa
 *Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations. 14.22- 15.20
 [Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)*
 
-*15.21-Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our `ShopOnlineDbContext` Class inherits from ef7 DbContext class. An red squigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our `ShopOnlineDbContext` Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is of the generic type `DbContextOptions` which has the data type `ShopOnlineDbContext` Passed as an argument to it. We can then write code to pass the argument that will be passed to our `ShopOnlineDbContext` Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with the relavent data so that we can move directly to the creation of our shopping cart functionality. So in order to seed database appropriately we can override a method that exist  within the DbContext based class. This method is named `OnModelCreating` An easy way to 
-[DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext) [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters) [Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics) [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance) [Data Seeding](https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding) [override (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override) [Creating and configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)*
+*15.21-Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our `ShopOnlineDbContext` Class inherits from ef7 DbContext class. An red squigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our `ShopOnlineDbContext` Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is of the generic type `DbContextOptions` which has the data type `ShopOnlineDbContext` Passed as an argument to it. We can then write code to pass the argument that will be passed to our `ShopOnlineDbContext` Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. *An Easy way to automaically generate a Constructor within visual studio is type `ctor` & then press the tab key twice. Then in order to indicate to .Net that we want an object of type ShopOnlineDbContext to be injected into this constructor only need to do is difine an parameter with in our constructor of type ShopOnlineDbContext.* [DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext) [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters) [Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics) [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)*
 
-*OnModelCreating Method Overriding*
+*`OnModelCreating Method Overriding`  We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with the relavent data so that we can move directly to the creation of our shopping cart functionality. So in order to seed database appropriately we can override a method that exist  within the DbContext based class. This method is named `OnModelCreating` An easy way to generate the relavent override code for this method through visual studio is to type in the word `override` & then press the space bar. We can Insulate The `OnModelCreating` item. From the drop down list presented in us with in visual studio. [Data Seeding](https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding) [override (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override) [Creating and configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)*
 
-*Using Entity Framework Core DbSet Generic Type *
+*19.57`Using Entity Framework Core DbSet Generic Type` So for each of our entities we need to appropriately include a public property of type `DbSet` with in our `ShopOnlineDbContext` Class. [DbSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbset?view=entity-framework-6.2.0)*
 
-*Register ShopOnlineDbContext class for Dependency Injection*
+* 20.50 `Register ShopOnlineDbContext class for Dependency Injection` Lets open the relavent program.cs file. [Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)*
 
-* Generate To Migration Using EF Core*
+* 21.22 `Generating Migration Using ef7` Open NuGet Package Manager Console Window. Follow with this Command `Add-Migration InitiaCreate` ShopOnline Api project Set as Startup Project. By generating this migration class this code generate our database & the relavent table. This method also contain code that seeds the relavent database table with the data that prepared prair to create in this project.*
 
-*To run migration type update-database Command in PM console Window.*
+* 23.47 `To run migration type update-database Command in Nuget PM console Window.` Check SSMS 19 Prev 2. We can see that the ShopOnline Database has been Created. The database table have been appropriately created based on the entities we created using C# classes. The relavent database tables have been seeded with the data created from the code we included with in the `OnModelCreating` method. Which was search with in the `ShopOnlineDbContext` class. The data with which we've seeded our database contains product & User Information. This is been done. so that we can focus on the shopping cart functionality & not worried  at this stage about implementing code `Creat Read Update & Delete` Functionality regrading products sold by our frictional online store.*
 
-*Check SSMS 19 Prev 2.*
+* 24.56 `Running Migrations Notes:` if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` The number Zero is a special case that means before the first migration & causes the effects of all migration to be rolled back. To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like `Migration1 or Migration2 or Migration3 or Migration4 or Migration5`. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`*
+
+*part-2*
 
 *`Retrieving Product data from database & Returning data to client blazor component`*
 
@@ -45,7 +47,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 *`Develop Web API Component`*
 
-* `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.*
+* `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.  [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto) *
 
 *`Create ShopOnline.Model Class Library` for creating the classes that have representingour dtos.*
 
@@ -59,74 +61,26 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 *Visual Studio generates the relavent code stuffs for us. So Visual Studio generates default implementations for the rlavent method definations. So in this stage only want to ipmplement the code logic relavent to the web flow that is the focus of this Project. IE returning a collection of product data to the client side calling code in this case our Blazor component. We are going to new to use the ShopOnlineDnContext Object to interect with our ShopOnline Database. As u will recall earlier we registered the ShopOnlineDbContext object for dependency injection. This means that we're able to gain accessed to an object of type ShopOnlineDbContext by defining an appropriate parameterized constructor in our pruduct repository class.*
 
-*An Easy way to automaically generate a Constructor within visual studio is type `ctor` & then press the tab key twice. Then in order to indicate to .Net that we want an object of type ShopOnlineDbContext to be injected into this constructor only need to do is difine an parameter with in our constructor of type ShopOnlineDbContext.*
-  
 
-###  📦 TIPS
+### 🏆  Learn (Research. Study)
+
+*C#11 [C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)  [using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using) [C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/) [C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/) [C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/) [Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)[Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods) [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers) [Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) [Properties (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties) [Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/) [The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)*
+
+*ef7  [Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)*  *Blazor [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor) [Blazor University](https://blazor-university.com/) [Blazor For Beginners By Jef Fritz](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)  [WebAssembly 1.0 ](https://webassembly.org/) * *ASP.NET CORE  [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)  [ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/) [Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/) [ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)* *.Net   [.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)* *Web Api  [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/) [Open Api](https://www.openapis.org/)* * http3 [Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side) [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)*
+
+###  📦 Tips & Tricks
 ---
-- `Running Migrations Notes:` if u have one migration or more than one migration & not happy with the changes made to the database u can undo the changes made by running this command `update-database 0` To Remove migration run this command `remove-migration` if you Upadate a database with multiple migrations Like `Migration1 or Migration2 or Migration3 or Migration4 or Migration5`. if u wish to rollback the changes to before a particular migration was run you can Rollback your changes to that particular state by running the migration that was run directly before the migration that back contain the changes you wish to roll back `update-database Migration2`
-
-- `Generating Migration Using ef7` Open NuGet Package Manager Console Window. Follow with this Command `Add-Migration InitiaCreate` ShopOnline Api project Set as Startup Project. By generating this migration class this code generate our database & the relavent table. This method also contain code that seeds the relavent database table with the data that prepared prair to careate in this project.
-
-- `Down` Method contains code to undo the changes made by code contain with the method.
-
-
-### 🏆  RESEARCH & STUDY
-
-
-*[Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application) [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/) [WebAssembly 1.0 ](https://webassembly.org/) [C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/) [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor) [Blazor University](https://blazor-university.com/) [Blazor For Beginners By Jef Fritz](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX) [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/) [Open Api](https://www.openapis.org/)*
-
-- [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
-
-- 10[The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
-
-- 11[Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
-
-- 12[Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
-
-- 14[Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
-
-- 15[Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
-
-- 16[Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0)
-
-- 17[Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
-
-- 18[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-
-- 19[SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
-
-- 21[ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
-
-- 23[Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
-
-- 24[Integral numeric types (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
-
-- 25[Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
-
-- 26[Properties (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties)
-
-- 27[ASP.NET Identity](https://docs.microsoft.com/en-us/aspnet/identity/)
-
-- 28[.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
-
-- 31[using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
-
-- 35[C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
-
-- 36[C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
-
-- 37[C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
-
-### QA
----
-- Problem: Add-Migration InitialCreate Not Working `Could not load assembly 'ShopOnline.Web'. Ensure it is referenced by the startup project 'ShopOnline.Api'.`
-- Solution: `https://www.thecodebuzz.com/build-failed-efcore-scaffold-dbcontext-command-pmc/`
-
-- Problem: `Add-Migration InitialCreate
+```
+Problem: Add-Migration InitialCreate Not Working `Could not load assembly 'ShopOnline.Web'. Ensure it is referenced by the startup project 'ShopOnline.Api'.`
+Solution: `https://www.thecodebuzz.com/build-failed-efcore-scaffold-dbcontext-command-pmc/`
+```
+```
+Problem: Add-Migration InitialCreate
 Build started...
-Build failed.`
-- Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
-
-- [Q]  Why We Use Migrations?
-- [A]  ```Migration Allow us to evolve our database without loosing data or database object.```
+Build failed.
+Solution: Open ShopOnlineDbContext.cs file Then Check the code & find the error. Two error found at UserName. Open User.cs Entities. Correct the int to string type.
+```
+```
+[Q]  Why We Use Migrations?
+[A] Migration Allow us to evolve our database without loosing data or database object.
+```
