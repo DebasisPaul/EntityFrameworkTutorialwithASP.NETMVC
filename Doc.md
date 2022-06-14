@@ -43,11 +43,11 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 *`Retrieving Product data from database & Returning data to client blazor component`*
 
-*[Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) *
+*[Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#)*
 
 *`Develop Web API Component`*
 
-* `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.  [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto) *
+*`Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.  [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)*
 
 *`Create ShopOnline.Model Class Library` for creating the classes that have representingour dtos.*
 
@@ -55,7 +55,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 *`Repository design Pattern Implementation to abstract data handling layout` Repositories are classes or components that incapsulate the logic required to access data Sources. We can use repositories to centralized common data access funtinality. Which has the benefit of facilitating beta maintainbility easier Unit Testing, extensibility & Cleaner Code. The best way to Understand the repository pattern is to Implement the relavent code. So lets write the code for Product repository Funtionality.*
 
-* Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the task object as discussed this is so the method implement this method defination can runs asycronusly.*
+*Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the task object as discussed this is so the method implement this method defination can runs asycronusly.*
 
 *Now we've define the interface that we want to class name ProductRepository to implement. So lets create a class directly with in the repository directory named product repository & the first things we need to do is write the code to implement the `IProductRepository` Interface.* 
 
