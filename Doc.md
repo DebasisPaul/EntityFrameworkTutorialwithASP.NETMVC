@@ -1,3 +1,4 @@
+---
 ### 🙌 START
 ---
 
@@ -16,49 +17,49 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 *Create Entities Related C# Clases. This is way the classes that represent out database entities will resign.*
 
-*Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#)*
+*11.00- 11.41 1Entity Relatioship Diagram Link [Visit Here](https://lucid.app/lucidchart/969fa12e-1cb2-49bf-9e2d-3a89accc11ab/edit?viewport_loc=-65%2C-11%2C1707%2C872%2C0_0&invitationId=inv_534ffb26-27c6-4037-99ad-da8d6e9f0aa2#) [Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`*
 
--  Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database that ef7 create for us.
+*Using  ef7 to generate a database for our shopping cart application. The classes that we've just crated representing our entities will be used by ef7 to generate the corresponding database table within the database that ef7 create for us. In order to generate our database with the relavent tables through Visual Studio Let's Install two Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio. The reason for installing `EntityFrameworkCore.Tools` this package is because we want to run our migration with in the visual studio as supposed to using .Net CLI for this purpose. We can use different commands when running migration commands using the .Net CLI. As supposed to the command we run when using Visual Studio. 11.56- 14.08*
 
--  In order to generate our database with the relavent tables through Visual Studio Let's Install Nuget Packages, `EntityFrameworkCore.SqlServer` `EntityFrameworkCore.Tools` for running migrations within visual studio. The reason for installing `EntityFrameworkCore.Tools` this package is because we want to run our migration with in the visual studio as supposed to using .Net CLI for this purpose. We can use different commands when running migration commands using the .Net CLI. As supposed to the command we run when using Visual Studio.
+*Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations. 14.22- 15.20
+[Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)*
 
--  Configuring Connection String in order to connect the application with the database that we wish to create using ef7 code first migrations.
+*15.21-Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our `ShopOnlineDbContext` Class inherits from ef7 DbContext class. An red squigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our `ShopOnlineDbContext` Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is of the generic type `DbContextOptions` which has the data type `ShopOnlineDbContext` Passed as an argument to it. We can then write code to pass the argument that will be passed to our `ShopOnlineDbContext` Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with the relavent data so that we can move directly to the creation of our shopping cart functionality. So in order to seed database appropriately we can override a method that exist  within the 
+[DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext) [Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters) [Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) [Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics) [Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance) [Data Seeding](https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding) [override (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override) [Creating and configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)*
 
--  Create Database Context Class. So in order to make this class represant our ef7 databse context we need to implement code so that our `ShopOnlineDbContext` Class inherits from ef7 DbContext class. An red sqigly line under `DbContext` this is because we've an important `Microsoft.EntityFramewokCore` Namespace. An easy way to include the appropriate using directive through visual studio is to press `Ctr+Period` & then select the appropriate menu item from the menu that is presented to us through Visual Studio. Let's Create the Constructor for our `ShopOnlineDbContext` Class. We must add a parameter to to the constructor that we've just generated. The parameter is name `Options` & is of the generic type `DbContextOptions` which has the data type `ShopOnlineDbContext` Passed as an argument to it. We can then write code to pass the argument that will be passed to our `ShopOnlineDbContext` Class Constructor to the base class from which Inherit IE. the DbContext class. Now because We want to focus on the shopping cart workflow at the stage & don't want us to distructed by the implementation of administrative CRUD operation functionality. We are going to seed our database with certain data. This is data that we already prepared. So we're not going to include Create Read Update & delete Funtionality regarding the creation & maintenance of product data. At the stage we are going to seed our database with product related data. We're going to seed our database with the relavent data so that we can move directly to the creation of our shopping cart functionality. So in order to seed database appropriately wen can override a method that exist  within a
+*OnModelCreating Method Overriding*
 
--  OnModelCreating Method Overriding
+*Using Entity Framework Core DbSet Generic Type *
 
--  Using Entity Framework Core DbSet Generic Type 
+*Register ShopOnlineDbContext class for Dependency Injection*
 
--  Register ShopOnlineDbContext class for Dependency Injection
+* Generate To Migration Using EF Core*
 
--  Generate To Migration Using EF Core
+*To run migration type update-database Command in PM console Window.*
 
--  To run migration type update-database Command in PM console Window.
+*Check SSMS 19 Prev 2.*
 
--  Check SSMS 19 Prev 2.
+*`Retrieving Product data from database & Returning data to client blazor component`*
 
-- `Retrieving Product data from database & Returning data to client blazor component`
+*[Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) *
 
-- [Diagram](https://lucid.app/lucidchart/4715f825-77f7-4867-bf6d-0b9c9961cf0f/edit?viewport_loc=-10%2C-11%2C1707%2C872%2C0_0&invitationId=inv_02814206-a40a-4c94-9087-ab773e457b69#) 
+*`Develop Web API Component`*
 
-- `Develop Web API Component`
+* `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.*
 
-- `Create Data Transfer Object (DTO) Model` This type of model includes the data that needs to be passed between server & client. So a DTO is an object that defines how the data will be send over the network. Because that represant our entities that we create earlier directly maped to our crrespondent database table. This classes represant the structure of certain tables in our database. We can create `DTOS` data transfer objects that are based on the underline entity classes. but may be differntly shaped based on the data we needs to be passed between client & server. Now we create a standard library project to house of `dtos`.
+*`Create ShopOnline.Model Class Library` for creating the classes that have representingour dtos.*
 
-- `Create ShopOnline.Model Class Library` for creating the classes that have representingour dtos.
+*`Coding The Logic for first workflow` Starting with the web api component. This workflow simply involved retrieving product data from our database & returning the data to the client blazor application. The blazor application will contain code that displays the relavent product data to the user. So ShopOnlineDbContext class has been registered for dependency injection. We'll see in a bit how we are able to implement code to ensure that an object of type ShopOnlineDbContext is injected into relavent classes.*
 
-- `Coding The Logic for first workflow` Starting with the web api component. This workflow simply involved retrieving product data from our database & returning the data to the client blazor application. The blazor application will contain code that displays the relavent product data to the user. So ShopOnlineDbContext class has been registered for dependency injection. We'll see in a bit how we are able to implement code to ensure that an object of type ShopOnlineDbContext is injected into relavent classes.
+*`Repository design Pattern Implementation to abstract data handling layout` Repositories are classes or components that incapsulate the logic required to access data Sources. We can use repositories to centralized common data access funtinality. Which has the benefit of facilitating beta maintainbility easier Unit Testing, extensibility & Cleaner Code. The best way to Understand the repository pattern is to Implement the relavent code. So lets write the code for Product repository Funtionality.*
 
-- `Repository design Pattern Implementation to abstract data handling layout` Repositories are classes or components that incapsulate the logic required to access data Sources. We can use repositories to centralized common data access funtinality. Which has the benefit of facilitating beta maintainbility easier Unit Testing, extensibility & Cleaner Code. The best way to Understand the repository pattern is to Implement the relavent code. So lets write the code for Product repository Funtionality.
+* Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the task object as discussed this is so the method implement this method defination can runs asycronusly.*
 
-- Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our first method is named get items & returns an `IEnumerable` Collection of type product. So a IEnumerable collection is passed as a type argument to the task object as discussed this is so the method implement this method defination can runs asycronusly.
+*Now we've define the interface that we want to class name ProductRepository to implement. So lets create a class directly with in the repository directory named product repository & the first things we need to do is write the code to implement the `IProductRepository` Interface.* 
 
-- Now we've define the interface that we want to class name ProductRepository to implement. So lets create a class directly with in the repository directory named product repository & the first things we need to do is write the code to implement the `IProductRepository` Interface. 
+*Visual Studio generates the relavent code stuffs for us. So Visual Studio generates default implementations for the rlavent method definations. So in this stage only want to ipmplement the code logic relavent to the web flow that is the focus of this Project. IE returning a collection of product data to the client side calling code in this case our Blazor component. We are going to new to use the ShopOnlineDnContext Object to interect with our ShopOnline Database. As u will recall earlier we registered the ShopOnlineDbContext object for dependency injection. This means that we're able to gain accessed to an object of type ShopOnlineDbContext by defining an appropriate parameterized constructor in our pruduct repository class.*
 
-- Visual Studio generates the relavent code stuffs for us. So Visual Studio generates default implementations for the rlavent method definations. So in this stage only want to ipmplement the code logic relavent to the web flow that is the focus of this Project. IE returning a collection of product data to the client side calling code in this case our Blazor component. We are going to new to use the ShopOnlineDnContext Object to interect with our ShopOnline Database. As u will recall earlier we registered the ShopOnlineDbContext object for dependency injection. This means that we're able to gain accessed to an object of type ShopOnlineDbContext by defining an appropriate parameterized constructor in our pruduct repository class.
-
-- An Easy way to automaically generate a Constructor within visual studio is type `ctor` & then press the tab key twice. Then in order to indicate to .Net that we want an object of type ShopOnlineDbContext to be injected into this constructor only need to do is difine an parameter with in our constructor of type ShopOnlineDbContext.
+*An Easy way to automaically generate a Constructor within visual studio is type `ctor` & then press the tab key twice. Then in order to indicate to .Net that we want an object of type ShopOnlineDbContext to be injected into this constructor only need to do is difine an parameter with in our constructor of type ShopOnlineDbContext.*
   
 
 ###  📦 TIPS
@@ -72,33 +73,16 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 ### 🏆  RESEARCH & STUDY
 
-- 1[Database Relationships]`https://www.sqlshack.com/learn-sql-types-of-relations/``https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561` `https://www.tutorialsteacher.com/sqlserver/tables-relations`
 
-- 2[Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
-
-- 3[ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/)
-
-- 4[WebAssembly 1.0 ](https://webassembly.org/)
-
-- 5[C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
-
-- 6[awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor)
-
-- 7[Blazor University](https://blazor-university.com/)
-
-- 8[https://blazor-university.com/](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
+*[Tutorial: Get Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application) [ ASP.NET MVC 5.2.3 Beta](https://docs.microsoft.com/en-us/aspnet/mvc/) [WebAssembly 1.0 ](https://webassembly.org/) [C# 11 Preview documentation](https://docs.microsoft.com/en-us/dotnet/csharp/) [awesome-blazor, Resources for Blazor, a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.](https://github.com/AdrienTorris/awesome-blazor) [Blazor University](https://blazor-university.com/) [Blazor For Beginners By Jef Fritz](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX) [WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/) [Open Api](https://www.openapis.org/)*
 
 - [Data Transfer Object (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5)(https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
-
-- 9[Constructors (C# programming guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
 
 - 10[The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
 
 - 11[Objects - create instances of types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)
 
 - 12[Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
-
-- 13[Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
 
 - 14[Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 
@@ -112,11 +96,7 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 - 19[SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
 
-- 20[Open Api](https://www.openapis.org/)
-
 - 21[ASP.NET Core Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0)
-
-- 22[WEB Api](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)
 
 - 23[Strings and string literals](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
@@ -130,27 +110,13 @@ We can create this code using C#. In this appliaction however the payment gatewa
 
 - 28[.NET CLI overview](https://docs.microsoft.com/en-us/dotnet/core/tools/)
 
-- 29[Connection Strings](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
-
-- 30[DbContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0, https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
-
 - 31[using (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
-
-- 32[Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
-
-- 33[Generic type parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
-
-- 34[Passing Parameters (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
 
 - 35[C# Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 - 36[C# programming guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
 
 - 37[C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
-
-- 38[Creating and configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)
-
-- 39[Data Seeding](https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding)
 
 ### QA
 ---
