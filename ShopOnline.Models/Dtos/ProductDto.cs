@@ -16,7 +16,7 @@ namespace ShopOnline.Models.Dtos
 
         public string ImageURL { get; set; }
 
-        public decimal price { get; set; }
+        public decimal Price { get; set; }
 
         public int Qty { get; set; }
 

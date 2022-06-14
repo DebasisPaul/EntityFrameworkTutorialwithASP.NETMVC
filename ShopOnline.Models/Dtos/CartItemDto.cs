@@ -20,7 +20,7 @@ namespace ShopOnline.Models.Dtos
 
         public string ProductImageURL { get; set; }
 
-        public decimal price { get; set; }
+        public decimal Price { get; set; }
 
         public decimal TotalPrice { get; set; }
 

@@ -5,6 +5,12 @@ namespace ShopOnline.Api.Repositories
 {
     public class ProductRepository : IProductRepository
     {
+
+        public ProductRepository()
+        {
+                
+        }
+
         public Task<IEnumerable<ProductCategory>> GetCategories()
         {
             throw new NotImplementedException();
@@ -22,7 +28,7 @@ namespace ShopOnline.Api.Repositories
 
         public Task<IEnumerable<Product>> GetItems()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
