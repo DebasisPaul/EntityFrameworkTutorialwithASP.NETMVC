@@ -69,9 +69,9 @@ Create Interface that runs asyncronusly, Overturn Generic tasks objects. Our fir
 
 *Part-3*
 
-*57.44So this is the third part of this project. Where we're building a shopping cart application using blazor WebAssembly & Web Api. We're building our application on .Net7. Which at the time I write. is the latest version of dotnet. We're now at stage where we're build our database using ef7 code first migrations. & i've started implementing code for the first workflow which simply involved retrieving product data from our database & displaying this product data to the user. In part 2 the previous part of the project, we implemented the code that retrives the relavent product data from our database & retuerns the data to the calling client. This code was implemented in an action method within a controller class named ProductController. This class was created with in our ShopOnline.Api project which contains the code for our web api components.*
+*57.44So this is the third part of this project. Where we're building a shopping cart application using blazor WebAssembly & Web Api. We're building our application on .Net7. Which at the time I writing this project is the latest version of dotnet. We're now at stage where we're build our database using ef7 code first migrations. & i've started implementing code for the first workflow which simply involved retrieving product data from our database & displaying this product data to the user. In part 2, the previous part of the project, we implemented the code that retrives the relavent product data from our database & retuerns the data to the calling client. This code was implemented in an action method within a controller class named ProductController. This class was created with in our ShopOnline.Api project which contains the code for our web api components.*
 
-*58.52*
+*58.52 *
 
 ### 🏆  Learn (Research. Study)
 
